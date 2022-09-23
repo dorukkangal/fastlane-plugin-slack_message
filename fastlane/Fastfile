@@ -2,7 +2,7 @@ lane :test do
   slack_message(
     message: 'Hello world',
     channel: '#test',
-    thread_id: ENV['thread_id'],
+    thread_timestamp: ENV['thread_id'],
     slack_url: ENV['slack_url'],
     success: true,
     use_webhook_configured_username_and_icon: true
